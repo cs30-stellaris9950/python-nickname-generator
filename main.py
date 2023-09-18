@@ -1,16 +1,39 @@
- # This is a sample Python script.
-
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
-
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press Ctrl+F8 to toggle the breakpoint.
+# global Variables
+Firstname = ""
+Lastname = ""
+nickname = ["Crusher", "the Scientist", "Twinkle-toes", "the Coder", "the Jester", "the Sloth", "Quick-Silver"]
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
+def main():
+    loop = True
+    while loop:
+        print(f"MAIN MENU {Firstname, Lastname}"
+              "\n1. Change Name "
+              "\n2. Display a Random Nickname "
+              "\n3. Display All Nicknames "
+              "\n4. Add a Nickname "
+              "\n5. Remove a Nickname "
+              "\n6. Exit")
+        menu_choice = int(input("Select an option(1-6): "))
 
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+        # Change Name
+        if menu_choice == 1:
+            Firstname = input("Please enter First name: ")
+            Lastname = input("Please enter Last name: ")
+        # Display a Random Nickname
+        elif menu_choice == 2:
+            print("Constructing")
+        # Display All Nicknames
+        elif menu_choice == 3:
+            print("Constructing")
+        # Add a Nickname
+        elif menu_choice == 4:
+            print("Constructing")
+        # Remove a Nickname
+        elif menu_choice == 5:
+            print("Constructing")
+        # Exit
+        elif menu_choice == 6:
+            loop = False
+
+
